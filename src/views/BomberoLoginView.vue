@@ -3,6 +3,14 @@
     <div class="w-full max-w-4xl bg-white rounded-3xl shadow-2xl overflow-hidden animate-scale-in">
       <div class="grid md:grid-cols-2">
         <div class="p-8 md:p-12">
+          <button 
+            @click="router.push({ name: 'home' })"
+            class="flex items-center gap-2 text-sm font-medium text-slate-500 hover:text-slate-700 mb-6 transition-colors"
+          >
+            <ArrowLeftIcon class="w-4 h-4" />
+            Volver al inicio
+          </button>
+
           <div class="flex items-center gap-3 mb-8">
             <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-red-600 to-red-700 flex items-center justify-center shadow-lg shadow-red-600/30">
               <ShieldCheckIcon class="w-7 h-7 text-white" />
@@ -91,7 +99,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
-import { ShieldCheckIcon, UserIcon, LockClosedIcon } from '@heroicons/vue/24/solid'
+import { ShieldCheckIcon, UserIcon, LockClosedIcon, ArrowLeftIcon } from '@heroicons/vue/24/solid'
 
 const router = useRouter()
 
