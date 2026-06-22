@@ -1,6 +1,6 @@
 export const IMAGES = {
-  ESCUDO_B28: '/src/assets/images/escudo b28.png',
-  LOGO_CGBVP: '/src/assets/images/logo cgbvp.png',
+  ESCUDO_B28: '/escudo b28.png',
+  LOGO_CGBVP: '/logo cgbvp.png',
   
   ALT_TEXTS: {
     ESCUDO_B28: 'Escudo B28 - Bomberos Voluntarios Miraflores',
